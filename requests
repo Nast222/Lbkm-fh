@@ -1,0 +1,10 @@
+import requests
+
+API_KEY = "ВАШ_API_КЛЮЧ"
+BASE_URL = "https://v6.exchangerate-api.com/v6/API_KEY/latest/USD"
+
+def get_rate(from_cur, to_cur):
+    url = f"https://v6.exchangerate-api.com/v6/{API_KEY}/latest/{from_cur}"
+    response = requests.get(url)
+    data = response.json()
+    return data["conversion_rates"][to_cur]
