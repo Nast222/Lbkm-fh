@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE и редактор
+.vscode/
+.idea/
+
+# Логи и временные файлы
+*.log
+*.tmp
+
+# Файлы ОС
+.DS_Store
+Thumbs.db
+
+# История (если не хотите хранить её в репозитории)
+history.json
